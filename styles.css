@@ -245,10 +245,42 @@ nav ul a:hover {
     color: var(--soft-white);
 }
 
+main {
+    background-color: var(--linen);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+main h2 {
+    color: var(--midnight-blue);
+    font-size: 2.35rem;
+    font-weight: normal;
+    margin-top: 1rem;
+}
+
+main>section {
+    margin: 1rem 2rem;
+    padding: 0;
+}
+
+main section:first-child {
+    margin-top: 3.3rem;
+}
+
 hr {
     height: 3px;
-    width: 90%;
     background-color: var(--champagne-gold);
+    margin: 0 2rem;
+}
+
+main p {
+    color: var(--midnight-blue);
+    font-size: 1.18rem;
+    line-height: 1.5;
+    margin-top: 0.6rem;
 }
 
 /* MEDIA QUERY (medium) */
