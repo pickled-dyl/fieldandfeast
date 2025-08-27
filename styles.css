@@ -179,7 +179,77 @@ select {
 }
 
 /* GLOBAL STYLES (mobile first/small) */
-/* styles go here */
+body {
+    font-family: var(--font);
+    min-width: 320px;
+    width: 100vw;
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+header {
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 4.75rem;
+    margin: 0;
+}
+
+header img {
+    width: 40%;
+    height: auto;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.48rem;
+}
+
+header img,
+header p {
+    margin: 1.8rem 0;
+}
+
+header nav {
+    background-color: var(--champagne-gold);
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--midnight-blue);
+    font-weight: bold;
+    font-size: 1.67rem;
+}
+
+nav ul a:hover {
+    color: var(--soft-white);
+}
+
+hr {
+    height: 3px;
+    width: 90%;
+    background-color: var(--champagne-gold);
+}
 
 /* MEDIA QUERY (medium) */
 /* @media screen and (min-width:600px) {
