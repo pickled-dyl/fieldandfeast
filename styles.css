@@ -281,6 +281,10 @@ hr {
     margin: 1rem 2rem;
 }
 
+hr:last-of-type {
+    margin: 2rem 0;
+}
+
 main p {
     color: var(--midnight-blue);
     font-size: 1.18rem;
@@ -373,6 +377,42 @@ main p {
     color: var(--soft-white);
     font-weight: bold;
     font-size: 1.2rem;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--midnight-blue);
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer address {
+    color: var(--soft-white);
+    font-style: normal;
+    padding: 3.8rem 0;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--champagne-gold);
+}
+
+footer a:hover {
+    color: var(--soft-white);
+    cursor: pointer;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+    padding-bottom: 1.8rem;
 }
 
 /* MEDIA QUERY (medium) */
