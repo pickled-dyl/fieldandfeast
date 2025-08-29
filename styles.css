@@ -175,10 +175,12 @@ select {
     --dark-charcoal: #2B2B2B;
     --soft-white: #FAF9F6;
 
+    --soft-gray: #b4b4b4;
+
     --font: "Playfair Display", Garamond, serif;
 
-    --shadow: -2px 2px 2px var(--dark-charcoal),
-        2px 2px 2px var(--dark-charcoal);
+    --shadow: -2px 2px 6px var(--soft-gray),
+        2px 2px 6px var(--soft-gray);
 }
 
 /* GLOBAL STYLES (mobile first/small) */
@@ -315,6 +317,7 @@ main p {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
+    gap: 1.3rem;
 }
 
 .deck figure div {
@@ -330,6 +333,7 @@ main p {
     color: var(--midnight-blue);
     font-style: italic;
     font-weight: normal;
+    font-size: 1.1rem;
     text-align: center;
     box-shadow: var(--shadow);
 }
@@ -357,6 +361,18 @@ main p {
 .deck figure:nth-child(5) div {
     background-image: url("images/basket-600w.jpg");
     background-color: var(--soft-white);
+}
+
+.deck a {
+    width: 100%;
+    background-color: var(--olive-green);
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.9rem 0;
+    text-decoration: none;
+    color: var(--soft-white);
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 /* MEDIA QUERY (medium) */
