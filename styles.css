@@ -175,12 +175,12 @@ select {
     --dark-charcoal: #2B2B2B;
     --soft-white: #FAF9F6;
 
-    --soft-gray: #b4b4b4;
+    --soft-charcoal: #2B2B2B70;
 
     --font: "Playfair Display", Garamond, serif;
 
-    --shadow: -2px 2px 6px var(--soft-gray),
-        2px 2px 6px var(--soft-gray);
+    --shadow: -1px 1px 20px var(--soft-charcoal),
+        1px 1px 20px var(--soft-charcoal);
 }
 
 /* GLOBAL STYLES (mobile first/small) */
@@ -329,10 +329,6 @@ main p {
     border-radius: 20px 20px 0 0;
 }
 
-/* .deck figure {
-    height: 400px;
-} */
-
 .deck figure figcaption {
     padding: 2rem;
     border-radius: 0 0 20px 20px;
@@ -340,34 +336,9 @@ main p {
     color: var(--midnight-blue);
     font-style: italic;
     font-weight: normal;
-    font-size: 1.75rem;
+    font-size: 1.85rem;
     text-align: center;
     box-shadow: var(--shadow);
-}
-
-.deck figure:nth-child(1) div {
-    background-image: url("images/tomatoes-600w.jpg");
-    background-color: var(--soft-white);
-}
-
-.deck figure:nth-child(2) div {
-    background-image: url("images/olive-oil-600w.jpg");
-    background-color: var(--soft-white);
-}
-
-.deck figure:nth-child(3) div {
-    background-image: url("images/table-setting-600w.jpg");
-    background-color: var(--soft-white);
-}
-
-.deck figure:nth-child(4) div {
-    background-image: url("images/chef-plating-600w.jpg");
-    background-color: var(--soft-white);
-}
-
-.deck figure:nth-child(5) div {
-    background-image: url("images/basket-600w.jpg");
-    background-color: var(--soft-white);
 }
 
 .deck a {
@@ -388,6 +359,7 @@ footer {
     font-size: 1.8rem;
     font-weight: bold;
     text-align: center;
+    padding: 2rem 0;
 }
 
 footer address {
