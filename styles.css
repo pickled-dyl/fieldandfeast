@@ -421,16 +421,19 @@ footer ul {
 
     .options {
         display: grid;
-        grid-template-columns: 2fr;
-        grid-template-rows: 2fr;
-    }
-
-    .options section {
-        background-color: red;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.5rem;
+        row-gap: 0.5rem;
     }
 
     #offerings section {
         padding: 0.75rem 1rem;
+    }
+
+    #offerings section:nth-of-type(3) {
+        grid-row: 2/3;
+        grid-column: 1/3;
+        margin-top: 0;
     }
 
     #offerings section h3 {
@@ -440,6 +443,16 @@ footer ul {
     #offerings section p,
     #offerings section ul {
         font-size: 1rem;
+    }
+
+    .deck {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .deck a {
+        grid-row: 3/4;
+        grid-column: 1/-1;
     }
 }
 
